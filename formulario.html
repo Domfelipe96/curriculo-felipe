@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>CADASTRO</title>
+</head>
+<body>
+    <h1>
+        FORMULÁRIO DE CADASTROS:        
+    </h1>
+    <input type="Search" name="nome" placeholder="Busca:"/><br />
+    <h2> Dados pessoais: </h2>
+	<form>
+        <input type="text" name="nome" placeholder="Nome:" />
+        <input type="text" name="sobrenome" placeholder="Sobrenome: "/>
+        <input type="number" name="idade" placeholder="Idade:"/>
+        <input type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx"/><br />        
+        <input type="url" name="linkedin" placeholder="LinkedIn URL:"/>
+        <input type="email" name="email" placeholder="E-mail: "/>
+		<input type="text" name="q" placeholder="Usuário:"/>        
+		<input type="password" name="q" placeholder="Senha:"/><br />                     
+    <section>
+        <h3>Horas de estudo:</h3>
+        <input type="checkbox" name="dias-da-semana" value=2 /> Segunda feira:
+        <input type="range" name="estudosseg" min=0 max=100 step=0.1 /><br />
+        <input type="checkbox" name="dias-da-semana" value=3 /> Terça feira:
+        <input type="range" name="estudoster" min=0 max=100 step=0.1 /><br />
+        <input type="checkbox" name="dias-da-semana" value=4 /> Quarta feira:
+        <input type="range" name="estudosqua" min=0 max=100 step=0.1 /><br />
+        <input type="checkbox" name="dias-da-semana" value=5 /> Quinta feira:
+        <input type="range" name="estudosqui" min=0 max=100 step=0.1 /><br />
+        <input type="checkbox" name="dias-da-semana" value=6 /> Sexta feira:
+        <input type="range" name="estudossex" min=0 max=100 step=0.1 /><br />      
+        <input type="radio" name="horario" value="manha" /> Manhã
+        <input type="radio" name="horario" value="tarde" /> Tarde
+        <input type="radio" name="horario" value="noite" /> Noite<br/>          
+    </section>
+    <section>
+        <h3>Dúvidas ou sugestões:</h3>
+        <textarea name="mensagem" cols=50 rows=10> </textarea><br />
+        Cidade: <input list="cidade" name="cidade" />
+        <datalist id="cidade">                
+            <option value="Atibaia - SP">Atibaia - SP</option>
+            <option value="Cubatão - SP">Cubatão - SP</option>
+            <option value="Guarulhos - SP">Guarulhos - SP</option>
+            <option value="Mongaguá - SP">Mongaguá - SP</option>
+            <option value="Santos - SP">Santos - SP</option>
+            <option value="São Paulo - SP">São Paulo - SP</option>
+            <option value="São Vicente - SP">São Vicente - SP</option>
+            <option value="Peruíbe - SP">Peruíbe - SP</option>                                
+            <option value="Praia Grande - SP">Praia Grande - SP</option>
+        </datalist><br />
+        <button type="submit"> Enviar </button> 
+        <button type="button"> Outra ação </button>
+        <button type="reset"> Limpar </button>                              
+    </section>    
+    </form>
+</body>
+</html>
